@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #141421;
+    --foreground: #ffffff;
+
+    --primary: #bdbdea;
+    --primary-foreground: #141414;
+
+    --muted-1: #2b2b37;
+    --muted-2: #20202c;
+    --muted-foreground: #c6c9d5;
+
+    --white: #ffffff;
+    --transparent: #ffffff00;
+
+    --green: #85dd6f;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+}
