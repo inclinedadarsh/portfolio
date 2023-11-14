@@ -25,4 +25,8 @@
   body {
     @apply bg-background text-foreground font-inter;
   }
+
+  .nav-container {
+    @apply relative w-full max-w-[1300px] mx-auto px-5 overflow-x-clip;
+  }
 }
