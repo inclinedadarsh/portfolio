@@ -14,13 +14,16 @@ const config: Config = {
 
         primary: {
           DEFAULT: "var(--primary)",
-          foreground: "var(--primary--foreground)",
+          foreground: "var(--primary-foreground)",
+          light: "var(--primary-light)",
         },
 
         muted: {
           1: "var(--muted-1)",
           2: "var(--muted-2)",
-          foreground: "var(--muted--foreground)",
+          "white-1": "var(--muted-white-1)",
+          "white-2": "var(--muted-white-2)",
+          foreground: "var(--muted-foreground)",
         },
 
         white: "var(--white)",
