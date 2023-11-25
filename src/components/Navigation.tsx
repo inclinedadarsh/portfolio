@@ -91,7 +91,7 @@ const Navigation = () => {
         </ul>
         <button
           aria-label="Copy email button"
-          className="lg:ml-6 py-3 px-7 rounded-md border-2 border-primary font-medium text-primary hover:bg-muted-1 focus-visible:bg-muted-1 transition-colors"
+          className="lg:ml-6 button-secondary"
         >
           Say Hello
         </button>
