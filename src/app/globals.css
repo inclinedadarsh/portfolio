@@ -26,7 +26,7 @@
 
 @layer base {
   body {
-    @apply bg-background text-foreground font-inter;
+    @apply bg-background text-foreground font-sans;
   }
 
   .nav-container {
@@ -34,11 +34,11 @@
   }
 
   .button-primary {
-    @apply py-2.5 px-7 rounded text-sm font-medium bg-primary text-primary-foreground hover:bg-[#5e5be9] transition-colors border border-primary-light;
+    @apply py-2.5 px-7 rounded font-medium tracking-wide bg-primary text-primary-foreground hover:bg-[#5e5be9] transition-colors border border-primary-light;
   }
 
   .button-secondary {
-    @apply py-2.5 px-7 rounded text-sm border-2 border-primary font-medium text-white hover:bg-muted-1 focus-visible:bg-muted-1 transition-colors;
+    @apply py-2.5 px-7 rounded border-2 border-primary font-medium tracking-wide text-white hover:bg-muted-1 focus-visible:bg-muted-1 transition-colors;
   }
 
   .view-container {

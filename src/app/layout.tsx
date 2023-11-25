@@ -1,13 +1,20 @@
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-space-grotesk",
+});
+
+const generalSans = localFont({
+  src: "./fonts/GeneralSans-Variable.ttf",
+  display: "swap",
+  fallback: ["system-ui", "arial"],
+  variable: "--font-general-sans",
 });
 
 export const metadata: Metadata = {
@@ -23,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${spaceGrotesk.variable}`}>
+      <body className={`${generalSans.variable} ${spaceGrotesk.variable}`}>
         <Navigation />
         {children}
         <Analytics />

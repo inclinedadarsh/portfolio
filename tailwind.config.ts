@@ -32,8 +32,8 @@ const config: Config = {
         green: "var(--green)",
       },
       fontFamily: {
-        inter: "var(--font-inter)",
-        "space-grotesk": "var(--font-space-grotesk)",
+        mono: "var(--font-space-grotesk)",
+        sans: "var(--font-general-sans)",
       },
     },
   },

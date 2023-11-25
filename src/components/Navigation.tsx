@@ -13,7 +13,7 @@ const Navigation = () => {
   const toggleMenu = () => setIsOpen((value) => !value);
 
   return (
-    <nav className="mt-5 font-space-grotesk flex items-center nav-container">
+    <nav className="mt-5 font-mono flex items-center nav-container">
       <div className="flex gap-4 items-center min-w-fit grow">
         <Image
           src={profileLogo}
