@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import { Menu, X, Github, Twitter } from "lucide-react";
 import profileLogo from "@/assets/logo_image.png";
+import Badge from "./Badge";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,10 +23,7 @@ const Navigation = () => {
           width={50}
           height={50}
         />
-        <div className="flex gap-2 items-center px-3 py-2 bg-muted-1 rounded-full h-fit">
-          <span className="w-3 h-3 bg-green rounded-full"></span>
-          <span>Available for work</span>
-        </div>
+        <Badge color="green">Available for work</Badge>
       </div>
       <button
         aria-label="Menu button"

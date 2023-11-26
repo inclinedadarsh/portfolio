@@ -6,7 +6,7 @@ const Header = () => {
       <p className="font-mono text-primary-light text-base md:text-xl">
         Hi, I'm Adarsh Dubey.
       </p>
-      <h1 className="font-semibold text-3xl md:text-5xl lg:text-[66px] flex flex-col mt-5 leading-snug">
+      <h1 className="font-semibold text-[34px] md:text-5xl lg:text-[66px] flex flex-col mt-5 leading-snug">
         <span className="text-muted-white-2">I help startups with</span>
         <span className="text-muted-white-1 md:mt-2">
           purpose driven websites.
