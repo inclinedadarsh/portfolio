@@ -2,6 +2,7 @@ import Image, { StaticImageData } from "next/image";
 
 import Link from "next/link";
 import { ExternalLink, Github } from "lucide-react";
+import IconLink from "./IconLink";
 
 interface ProjectCardProps extends React.HTMLAttributes<HTMLDivElement> {
   title: string;
@@ -40,20 +41,14 @@ const ProjectCard = ({
           </h3>
           <div className="flex gap-4">
             {sourceLink && (
-              <Link
-                className="p-2.5 md:p-3 rounded-full bg-muted-2 hover:bg-muted-1 focus-visible:bg-muted-1 transition-colors"
-                href={sourceLink}
-              >
+              <IconLink href={sourceLink}>
                 <Github width={20} height={20} strokeWidth={1.5} />
-              </Link>
+              </IconLink>
             )}
             {liveLink && (
-              <Link
-                className="p-2.5 md:p-3 rounded-full bg-muted-2 hover:bg-muted-1 focus-visible:bg-muted-1 transition-colors"
-                href={liveLink}
-              >
+              <IconLink href={liveLink}>
                 <ExternalLink width={20} height={20} strokeWidth={1.5} />
-              </Link>
+              </IconLink>
             )}
           </div>
         </div>

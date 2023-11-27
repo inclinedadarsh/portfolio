@@ -8,6 +8,7 @@ import Link from "next/link";
 import { Menu, X, Github, Twitter } from "lucide-react";
 import profileLogo from "@/assets/logo_image.png";
 import Badge from "./ui/Badge";
+import IconLink from "./ui/IconLink";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,18 +49,12 @@ const Navigation = () => {
           </button>
         </div>
         <div className="lg:ml-6 flex gap-4 mt-10 lg:mt-0">
-          <Link
-            className="p-3 rounded-full bg-muted-2 hover:bg-muted-1 focus-visible:bg-muted-1 transition-colors"
-            href="https://github.com/inclinedadarsh"
-          >
+          <IconLink href="https://github.com/inclinedadarsh">
             <Github width={20} height={20} strokeWidth={1.5} />
-          </Link>
-          <Link
-            className="p-3 rounded-full bg-muted-2 hover:bg-muted-1 focus-visible:bg-muted-1 transition-colors"
-            href="https://github.com/inclinedadarsh"
-          >
+          </IconLink>
+          <IconLink href="https://twitter.com/inclinedadarsh">
             <Twitter width={20} height={20} strokeWidth={1.5} />
-          </Link>
+          </IconLink>
         </div>
         <ul className="flex flex-col lg:flex-row gap-6 text-lg lg:ml-auto">
           <li>
