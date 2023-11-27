@@ -7,7 +7,7 @@ import Link from "next/link";
 
 import { Menu, X, Github, Twitter } from "lucide-react";
 import profileLogo from "@/assets/logo_image.png";
-import Badge from "./Badge";
+import Badge from "./ui/Badge";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);

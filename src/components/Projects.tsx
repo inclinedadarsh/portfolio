@@ -1,6 +1,6 @@
 import Link from "next/link";
-import ProjectCard from "./ProjectCard";
-import SectionTitle from "./SectionTitle";
+import ProjectCard from "./ui/ProjectCard";
+import SectionTitle from "./ui/SectionTitle";
 
 import { cipheredBanner, timeloomBanner, unlinkedBanner } from "@/assets";
 

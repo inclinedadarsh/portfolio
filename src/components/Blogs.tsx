@@ -1,5 +1,5 @@
-import BlogCard from "./BlogCard";
-import SectionTitle from "./SectionTitle";
+import BlogCard from "./ui/BlogCard";
+import SectionTitle from "./ui/SectionTitle";
 
 const Blogs = () => {
   return (
