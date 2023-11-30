@@ -73,7 +73,7 @@ const Navigation = () => {
           </li>
           <li>
             <Link
-              href="/"
+              href="/work"
               className="flex gap-3 hover:text-primary focus-visible:text-primary transition-colors"
             >
               <span className="text-primary">2.</span>Work
@@ -81,7 +81,7 @@ const Navigation = () => {
           </li>
           <li>
             <Link
-              href="/"
+              href="/about"
               className="flex gap-3 hover:text-primary focus-visible:text-primary transition-colors"
             >
               <span className="text-primary">3.</span>About
