@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Button, buttonVariants } from "./ui/Button";
 
 const Header = () => {
   return (
@@ -18,8 +19,11 @@ const Header = () => {
         builder.
       </p>
       <div className="flex gap-5 mt-10">
-        <button className="button-primary">Say Hello</button>
-        <Link className="button-secondary" href="https://cal.com/adarshdubey">
+        <Button>Say Hello</Button>
+        <Link
+          className={buttonVariants({ variant: "outline", size: "default" })}
+          href="https://cal.com/adarshdubey"
+        >
           Schedule a call
         </Link>
       </div>
