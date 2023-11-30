@@ -33,14 +33,6 @@
     @apply relative w-full max-w-[1300px] mx-auto px-5 overflow-x-clip;
   }
 
-  .button-primary {
-    @apply py-2.5 px-7 rounded font-medium tracking-wide bg-primary text-primary-foreground hover:bg-[#5e5be9] transition-colors border border-primary-light;
-  }
-
-  .button-secondary {
-    @apply py-2.5 px-7 rounded border-2 border-primary font-medium tracking-wide text-white hover:bg-muted-1 focus-visible:bg-muted-1 transition-colors;
-  }
-
   .view-container {
     @apply box-border mx-auto;
     @apply w-[1100px] max-2xl:w-[1100px] max-xl:w-[920px] max-lg:w-[680px] max-md:w-[440px] max-sm:w-full px-5;

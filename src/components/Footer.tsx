@@ -1,6 +1,32 @@
 import Link from "next/link";
 import { ArrowUpRight, Github, Twitter, Linkedin, Mail } from "lucide-react";
-import IconLink from "./ui/IconLink";
+import { buttonVariants } from "./ui/Button";
+
+type footerLinkType = {
+  href: string;
+  icon: React.ReactNode;
+};
+
+type footerLinksType = footerLinkType[];
+
+const footerLinks: footerLinksType = [
+  {
+    href: "https://github.com/inclinedadarsh",
+    icon: <Github size={20} strokeWidth={1.5} />,
+  },
+  {
+    href: "https://twitter.com/inclinedadarsh",
+    icon: <Twitter size={20} strokeWidth={1.5} />,
+  },
+  {
+    href: "https://linkedin.com/in/dubeyadarsh",
+    icon: <Linkedin size={20} strokeWidth={1.5} />,
+  },
+  {
+    href: "mailto:dubeyadarshmain@gmail.com",
+    icon: <Mail size={20} strokeWidth={1.5} />,
+  },
+];
 
 const Footer = () => {
   return (
@@ -15,18 +41,15 @@ const Footer = () => {
         </Link>
       </div>
       <div className="grid grid-cols-4 place-items-center mx-auto md:mx-0 md:grid-cols-2 gap-4">
-        <IconLink href="https://github.com/inclinedadarsh">
-          <Github size={20} strokeWidth={1.5} />
-        </IconLink>
-        <IconLink href="https://twitter.com/inclinedadarsh">
-          <Twitter size={20} strokeWidth={1.5} />
-        </IconLink>
-        <IconLink href="https://linkedin.com/in/dubeyadarsh">
-          <Linkedin size={20} strokeWidth={1.5} />
-        </IconLink>
-        <IconLink href="mailto:dubeyadarshmain@gmail.com">
-          <Mail size={20} strokeWidth={1.5} />
-        </IconLink>
+        {footerLinks.map((link: footerLinkType) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className={buttonVariants({ variant: "icon", size: "icon" })}
+          >
+            {link.icon}
+          </Link>
+        ))}
       </div>
     </footer>
   );

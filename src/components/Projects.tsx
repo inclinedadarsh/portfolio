@@ -3,6 +3,7 @@ import ProjectCard from "./ui/ProjectCard";
 import SectionTitle from "./ui/SectionTitle";
 
 import { cipheredBanner, timeloomBanner, unlinkedBanner } from "@/assets";
+import { buttonVariants } from "./ui/Button";
 
 const Projects = () => {
   return (
@@ -54,7 +55,10 @@ const Projects = () => {
       </div>
       <div className="mt-6 flex items-center gap-5">
         <div className="grow border-t-2 border-muted-1 border-dashed"></div>
-        <Link href="/work" className="button-secondary">
+        <Link
+          href="/work"
+          className={buttonVariants({ variant: "outline", size: "default" })}
+        >
           See all projects
         </Link>
       </div>

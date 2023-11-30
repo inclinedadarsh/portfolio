@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
 import { contactBanner } from "@/assets";
+import { buttonVariants } from "./ui/Button";
 
 const Contact = () => {
   return (
@@ -21,7 +22,7 @@ const Contact = () => {
         </h2>
         <div className="flex z-0 gap-8">
           <Link
-            className="px-5 py-3 bg-muted-white-1 hover:bg-muted-white-2 transition-colors font-medium text-background rounded"
+            className={buttonVariants({ variant: "accent", size: "default" })}
             href="mailto:dubeyadarshmain@gmail.com"
           >
             Say Hello

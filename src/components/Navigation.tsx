@@ -8,7 +8,7 @@ import Link from "next/link";
 import { Menu, X, Github, Twitter } from "lucide-react";
 import profileLogo from "@/assets/logo_image.png";
 import Badge from "./ui/Badge";
-import IconLink from "./ui/IconLink";
+import { Button, buttonVariants } from "./ui/Button";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,12 +49,18 @@ const Navigation = () => {
           </button>
         </div>
         <div className="lg:ml-6 flex gap-4 mt-10 lg:mt-0">
-          <IconLink href="https://github.com/inclinedadarsh">
+          <Link
+            href="https://github.com/inclinedadarsh"
+            className={buttonVariants({ variant: "icon", size: "icon" })}
+          >
             <Github width={20} height={20} strokeWidth={1.5} />
-          </IconLink>
-          <IconLink href="https://twitter.com/inclinedadarsh">
+          </Link>
+          <Link
+            href="https://twitter.com/inclinedadarsh"
+            className={buttonVariants({ variant: "icon", size: "icon" })}
+          >
             <Twitter width={20} height={20} strokeWidth={1.5} />
-          </IconLink>
+          </Link>
         </div>
         <ul className="flex flex-col lg:flex-row gap-6 text-lg lg:ml-auto">
           <li>
@@ -82,12 +88,9 @@ const Navigation = () => {
             </Link>
           </li>
         </ul>
-        <button
-          aria-label="Copy email button"
-          className="lg:ml-6 button-secondary"
-        >
+        <Button variant="outline" className="lg:ml-6">
           Say Hello
-        </button>
+        </Button>
       </div>
     </nav>
   );
