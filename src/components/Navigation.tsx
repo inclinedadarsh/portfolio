@@ -99,9 +99,12 @@ const Navigation = () => {
             </Link>
           </li>
         </ul>
-        <Button variant="outline" className="lg:ml-6">
+        <Link
+          href="mailto:dubeyadarshmain@gmail.com"
+          className={`${buttonVariants({ variant: "outline" })} lg:ml-6`}
+        >
           Say Hello
-        </Button>
+        </Link>
       </div>
     </nav>
   );
