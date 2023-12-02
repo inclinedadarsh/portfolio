@@ -1,17 +1,22 @@
+import { ReactNode } from "react";
+
 interface BadgeProps {
-  children: string;
+  children: string | ReactNode;
+  className?: string;
   color?: "primary-light" | "green";
 }
 
-const Badge = ({ children, color }: BadgeProps) => {
+const Badge = ({ children, color, className }: BadgeProps) => {
   return (
-    <div className="font-mono flex gap-2 items-center px-3 py-2 bg-muted-1 rounded-full h-fit">
+    <div
+      className={`font-mono flex items-center space-x-2 px-3 py-2 bg-muted-1 rounded-full h-fit ${className}`}
+    >
       <span
-        className={`w-3 h-3 ${
+        className={`inline-block w-3 h-3 rounded-full ${
           color == "green" ? "bg-green" : "bg-primary-light"
-        } rounded-full`}
+        }`}
       ></span>
-      <span>{children}</span>
+      <span className="flex-1">{children}</span>
     </div>
   );
 };
