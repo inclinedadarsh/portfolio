@@ -36,6 +36,8 @@ const Footer = () => {
         <Link
           href="https://github.com/inclinedadarsh/portfolio"
           className="flex gap-2 items-center before:block relative before:absolute before:w-full w-fit mx-auto md:mx-0 before:h-[1px] before:-bottom-0.5 before:left-0 before:bg-muted-white-2 hover:before:scale-x-0 before:origin-left before:transition-transform"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           Codebase on GitHub <ArrowUpRight size={20} strokeWidth={1.5} />
         </Link>
@@ -46,6 +48,8 @@ const Footer = () => {
             key={link.href}
             href={link.href}
             className={buttonVariants({ variant: "icon", size: "icon" })}
+            rel="noopener noreferrer"
+            target="_blank"
           >
             {link.icon}
           </Link>

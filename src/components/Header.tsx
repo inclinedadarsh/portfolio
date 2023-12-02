@@ -19,10 +19,17 @@ const Header = () => {
         builder.
       </p>
       <div className="flex gap-5 mt-10">
-        <Button>Say Hello</Button>
+        <Link
+          href="mailto:dubeyadarshmain@gmail.com"
+          className={buttonVariants({})}
+        >
+          Say Hello
+        </Link>
         <Link
           className={buttonVariants({ variant: "outline", size: "default" })}
           href="https://cal.com/adarshdubey"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           Schedule a call
         </Link>

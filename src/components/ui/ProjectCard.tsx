@@ -42,6 +42,8 @@ const ProjectCard = ({
           <div className="flex gap-4">
             {sourceLink && (
               <Link
+                rel="noopener noreferrer"
+                target="_blank"
                 href={sourceLink}
                 className={buttonVariants({ variant: "icon", size: "icon" })}
               >
@@ -50,6 +52,8 @@ const ProjectCard = ({
             )}
             {liveLink && (
               <Link
+                rel="noopener noreferrer"
+                target="_blank"
                 href={liveLink}
                 className={buttonVariants({ variant: "icon", size: "icon" })}
               >

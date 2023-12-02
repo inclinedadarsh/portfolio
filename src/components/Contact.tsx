@@ -30,6 +30,8 @@ const Contact = () => {
           <Link
             className="flex gap-1 underline hover:no-underline items-center"
             href="https://bento.me/adarsh"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             Other options
             <ChevronRight size={20} strokeWidth={1.5} />
