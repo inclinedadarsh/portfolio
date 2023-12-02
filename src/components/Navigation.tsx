@@ -44,7 +44,9 @@ const Navigation = () => {
         } transition-[left] z-10 w-full h-screen lg:h-fit bg-background flex flex-col lg:flex-row lg:items-center lg:grow gap-10 lg:gap-6 px-5 lg:px-0`}
       >
         <div className="lg:hidden flex justify-between items-center mt-[9px]">
-          <span className="font-medium text-lg text-primary">Adarsh Dubey</span>
+          <span className="font-medium text-lg text-primary-light">
+            Adarsh Dubey
+          </span>
           <button
             aria-label="Menu button"
             className="lg:hidden"
@@ -71,7 +73,7 @@ const Navigation = () => {
           <li>
             <Link
               href="/"
-              className="flex gap-3 hover:text-primary focus-visible:text-primary transition-colors"
+              className="flex gap-3 hover:text-primary-light focus-visible:text-primary-light transition-colors"
             >
               <span className="text-primary">1.</span>Home
             </Link>
@@ -79,7 +81,7 @@ const Navigation = () => {
           <li>
             <Link
               href="/work"
-              className="flex gap-3 hover:text-primary focus-visible:text-primary transition-colors"
+              className="flex gap-3 hover:text-primary-light focus-visible:text-primary-light transition-colors"
             >
               <span className="text-primary">2.</span>Work
             </Link>
@@ -87,7 +89,7 @@ const Navigation = () => {
           <li>
             <Link
               href="/about"
-              className="flex gap-3 hover:text-primary focus-visible:text-primary transition-colors"
+              className="flex gap-3 hover:text-primary-light focus-visible:text-primary-light transition-colors"
             >
               <span className="text-primary">3.</span>About
             </Link>
