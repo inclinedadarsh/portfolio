@@ -23,6 +23,8 @@ const Header = () => {
         <Link
           className={buttonVariants({ variant: "outline", size: "default" })}
           href="https://cal.com/adarshdubey"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           Schedule a call
         </Link>

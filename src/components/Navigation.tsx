@@ -57,12 +57,16 @@ const Navigation = () => {
         </div>
         <div className="lg:ml-6 flex gap-4 mt-10 lg:mt-0">
           <Link
+            rel="noopener noreferrer"
+            target="_blank"
             href="https://github.com/inclinedadarsh"
             className={buttonVariants({ variant: "icon", size: "icon" })}
           >
             <Github width={20} height={20} strokeWidth={1.5} />
           </Link>
           <Link
+            rel="noopener noreferrer"
+            target="_blank"
             href="https://twitter.com/inclinedadarsh"
             className={buttonVariants({ variant: "icon", size: "icon" })}
           >
