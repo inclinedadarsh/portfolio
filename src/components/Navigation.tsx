@@ -9,6 +9,7 @@ import { Menu, X, Github, Twitter } from "lucide-react";
 import profileLogo from "@/assets/logo_image.png";
 import Badge from "./ui/Badge";
 import { Button, buttonVariants } from "./ui/Button";
+import Marquee from "react-fast-marquee";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,11 @@ const Navigation = () => {
           width={50}
           height={50}
         />
-        <Badge color="green">Available for work</Badge>
+        <Badge color="green" className="w-[180px]">
+          <Marquee autoFill pauseOnHover>
+            Available for work&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+          </Marquee>
+        </Badge>
       </div>
       <button
         aria-label="Menu button"

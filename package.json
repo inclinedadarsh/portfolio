@@ -16,6 +16,7 @@
     "next": "14.0.2",
     "react": "^18",
     "react-dom": "^18",
+    "react-fast-marquee": "^1.6.2",
     "tailwind-merge": "^2.0.0"
   },
   "devDependencies": {
