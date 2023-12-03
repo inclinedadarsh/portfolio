@@ -31,9 +31,14 @@ const config: Config = {
 
         green: "var(--green)",
       },
+
       fontFamily: {
         mono: "var(--font-space-grotesk)",
         sans: "var(--font-general-sans)",
+      },
+
+      transitionProperty: {
+        button: "background-color border-radius",
       },
     },
   },
