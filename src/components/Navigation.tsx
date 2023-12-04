@@ -61,6 +61,7 @@ const Navigation = () => {
             target="_blank"
             href="https://github.com/inclinedadarsh"
             className={buttonVariants({ variant: "icon", size: "icon" })}
+            aria-label="GitHub Profile Link"
           >
             <Github width={20} height={20} strokeWidth={1.5} />
           </Link>
@@ -69,6 +70,7 @@ const Navigation = () => {
             target="_blank"
             href="https://twitter.com/inclinedadarsh"
             className={buttonVariants({ variant: "icon", size: "icon" })}
+            aria-label="Twitter Profile Link"
           >
             <Twitter width={20} height={20} strokeWidth={1.5} />
           </Link>

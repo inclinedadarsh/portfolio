@@ -46,6 +46,7 @@ const ProjectCard = ({
                 target="_blank"
                 href={sourceLink}
                 className={buttonVariants({ variant: "icon", size: "icon" })}
+                aria-label={`${title} source code`}
               >
                 <Github width={20} height={20} strokeWidth={1.5} />
               </Link>
@@ -56,6 +57,7 @@ const ProjectCard = ({
                 target="_blank"
                 href={liveLink}
                 className={buttonVariants({ variant: "icon", size: "icon" })}
+                aria-label={`${title} live demo`}
               >
                 <ExternalLink width={20} height={20} strokeWidth={1.5} />
               </Link>
