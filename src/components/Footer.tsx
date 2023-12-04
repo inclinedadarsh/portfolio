@@ -5,6 +5,7 @@ import { buttonVariants } from "./ui/Button";
 type footerLinkType = {
   href: string;
   icon: React.ReactNode;
+  ariaLabel: string;
 };
 
 type footerLinksType = footerLinkType[];
@@ -13,18 +14,22 @@ const footerLinks: footerLinksType = [
   {
     href: "https://github.com/inclinedadarsh",
     icon: <Github size={20} strokeWidth={1.5} />,
+    ariaLabel: "GitHub Icon",
   },
   {
     href: "https://twitter.com/inclinedadarsh",
     icon: <Twitter size={20} strokeWidth={1.5} />,
+    ariaLabel: "Twitter Icon",
   },
   {
     href: "https://linkedin.com/in/dubeyadarsh",
     icon: <Linkedin size={20} strokeWidth={1.5} />,
+    ariaLabel: "LinkedIn Icon",
   },
   {
     href: "mailto:dubeyadarshmain@gmail.com",
     icon: <Mail size={20} strokeWidth={1.5} />,
+    ariaLabel: "Mail Icon",
   },
 ];
 
@@ -50,6 +55,7 @@ const Footer = () => {
             className={buttonVariants({ variant: "icon", size: "icon" })}
             rel="noopener noreferrer"
             target="_blank"
+            aria-label={link.ariaLabel}
           >
             {link.icon}
           </Link>
