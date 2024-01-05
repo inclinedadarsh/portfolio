@@ -17,7 +17,7 @@ const Banner = ({
 }: BannerProps) => {
     return (
         <div
-            className={`py-2 bg-primary flex flex-col md:flex-row gap-1.5 md:gap-3 items-center justify-center text-sm md:text-base ${className}`}
+            className={`py-2 bg-[#5553e0] flex flex-col md:flex-row gap-1.5 md:gap-3 items-center justify-center text-sm md:text-base ${className}`}
             {...props}
         >
             <span className=''>{children}</span>
