@@ -48,9 +48,6 @@ export default function RootLayout({
             <body
                 className={`${generalSans.variable} ${spaceGrotesk.variable}`}
             >
-                <Banner linkText='Join the crew' url='https://bios.vercel.app/'>
-                    I'm looking for folks to work with me at BIO-S
-                </Banner>
                 <Navigation />
                 {children}
                 <Analytics />
