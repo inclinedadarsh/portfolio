@@ -1,10 +1,8 @@
 "use client";
 
 import { useState } from "react";
-
 import Image from "next/image";
 import Link from "next/link";
-
 import { Menu, X, Github, Twitter } from "lucide-react";
 import profileLogo from "@/assets/logo_image.png";
 import Badge from "./ui/Badge";
@@ -14,6 +12,7 @@ import Marquee from "react-fast-marquee";
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen((value) => !value);
+  const closeMenu = () => setIsOpen(false);
 
   return (
     <nav className="mt-5 font-mono flex items-center nav-container">
@@ -48,7 +47,7 @@ const Navigation = () => {
             Adarsh Dubey
           </span>
           <button
-            aria-label="Menu button"
+            aria-label="Close menu button"
             className="lg:hidden"
             onClick={toggleMenu}
           >
@@ -62,6 +61,7 @@ const Navigation = () => {
             href="https://github.com/inclinedadarsh"
             className={buttonVariants({ variant: "icon", size: "icon" })}
             aria-label="GitHub Profile Link"
+            onClick={closeMenu}
           >
             <Github width={20} height={20} strokeWidth={1.5} />
           </Link>
@@ -71,6 +71,7 @@ const Navigation = () => {
             href="https://twitter.com/inclinedadarsh"
             className={buttonVariants({ variant: "icon", size: "icon" })}
             aria-label="Twitter Profile Link"
+            onClick={closeMenu}
           >
             <Twitter width={20} height={20} strokeWidth={1.5} />
           </Link>
@@ -80,6 +81,7 @@ const Navigation = () => {
             <Link
               href="/"
               className="flex gap-3 hover:text-primary-light focus-visible:text-primary-light transition-colors"
+              onClick={closeMenu}
             >
               <span className="text-primary">1.</span>Home
             </Link>
@@ -88,6 +90,7 @@ const Navigation = () => {
             <Link
               href="/work"
               className="flex gap-3 hover:text-primary-light focus-visible:text-primary-light transition-colors"
+              onClick={closeMenu}
             >
               <span className="text-primary">2.</span>Work
             </Link>
@@ -96,6 +99,7 @@ const Navigation = () => {
             <Link
               href="/about"
               className="flex gap-3 hover:text-primary-light focus-visible:text-primary-light transition-colors"
+              onClick={closeMenu}
             >
               <span className="text-primary">3.</span>About
             </Link>
@@ -104,6 +108,7 @@ const Navigation = () => {
         <Link
           href="mailto:dubeyadarshmain@gmail.com"
           className={`${buttonVariants({ variant: "outline" })} lg:ml-6`}
+          onClick={closeMenu}
         >
           Say Hello
         </Link>
