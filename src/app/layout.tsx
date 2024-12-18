@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
-import Navigation from "@/components/Navigation";
 import Banner from "@/components/Banner";
+import Navigation from "@/components/Navigation";
 
 const spaceGrotesk = Space_Grotesk({
     subsets: ["latin"],
@@ -44,7 +44,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang='en'>
+        <html lang="en">
             <body
                 className={`${generalSans.variable} ${spaceGrotesk.variable}`}
             >

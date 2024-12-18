@@ -1,11 +1,11 @@
 import Development from "@/components/Development";
 
 const About = () => {
-  return (
-    <>
-      <Development />
-    </>
-  );
+    return (
+        <>
+            <Development />
+        </>
+    );
 };
 
 export default About;

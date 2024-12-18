@@ -3,7 +3,7 @@ import { buttonVariants } from "@/components/ui/Button";
 import Link from "next/link";
 
 const Work = () => {
-  return <Development />;
+    return <Development />;
 };
 
 export default Work;
