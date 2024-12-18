@@ -3,38 +3,38 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --background: #141421;
-    --foreground: #ffffff;
+    :root {
+        --background: #141421;
+        --foreground: #ffffff;
 
-    --primary: #8987f4;
-    --primary-light: #bdbdea;
-    --primary-foreground: #141414;
+        --primary: #8987f4;
+        --primary-light: #bdbdea;
+        --primary-foreground: #141414;
 
-    --muted-1: #2b2b37;
-    --muted-2: #20202c;
-    --muted-foreground: #c6c9d5;
+        --muted-1: #2b2b37;
+        --muted-2: #20202c;
+        --muted-foreground: #c6c9d5;
 
-    --white: #ffffff;
-    --transparent: #ffffff00;
+        --white: #ffffff;
+        --transparent: #ffffff00;
 
-    --green: #85dd6f;
-    --muted-white-2: #c7cad6cc;
-    --muted-white-1: #fffffff2;
-  }
+        --green: #85dd6f;
+        --muted-white-2: #c7cad6cc;
+        --muted-white-1: #fffffff2;
+    }
 }
 
 @layer base {
-  body {
-    @apply bg-background text-foreground font-sans;
-  }
+    body {
+        @apply bg-background text-foreground font-sans;
+    }
 
-  .nav-container {
-    @apply relative w-full max-w-[1300px] mx-auto px-5 overflow-x-clip;
-  }
+    .nav-container {
+        @apply relative w-full max-w-[1300px] mx-auto px-5 overflow-x-clip;
+    }
 
-  .view-container {
-    @apply box-border mx-auto;
-    @apply w-[1100px] max-2xl:w-[1100px] max-xl:w-[920px] max-lg:w-[680px] max-md:w-[440px] max-sm:w-full px-5;
-  }
+    .view-container {
+        @apply box-border mx-auto;
+        @apply w-[1100px] max-2xl:w-[1100px] max-xl:w-[920px] max-lg:w-[680px] max-md:w-[440px] max-sm:w-full px-5;
+    }
 }
