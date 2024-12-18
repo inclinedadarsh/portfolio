@@ -49,11 +49,11 @@ To get a local copy up and running follow these simple example steps.
     ```
 3. Install the dependencies
     ```bash
-    pnpm install
+    bun install
     ````
 4. Start the development server
     ```bash
-    pnpm dev
+    bun dev
     ```
 
 ## License
